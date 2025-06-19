@@ -16,7 +16,6 @@ info:
 tcp:
   - host:
       - "{{Hostname}}"
-      - "{{Host}}:10001"
     inputs:
       - data: "^AI21400"
 

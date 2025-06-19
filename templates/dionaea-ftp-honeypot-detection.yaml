@@ -16,7 +16,6 @@ info:
 tcp:
   - host:
       - "{{Hostname}}"
-      - "{{Host}}:21"
     inputs:
       - data: "USER root\r\n"
         read: 1024

@@ -16,7 +16,6 @@ info:
 tcp:
   - host:
       - "{{Hostname}}"
-      - "{{Host}}:6379"
     inputs:
       - data: "QUIT"
 
