@@ -1,0 +1,20 @@
+id: http-passwd-honeypot-detection
+
+info:
+  name: HTTP Passwd Honeypot Detection
+  author: peach0214
+  severity: info
+  description: |
+    HTTP Passwd honeypot
+  tags: honeypot
+
+http:
+  - method: GET
+    path:
+      - "{{BaseURL}}/{{randstr}}}/etc/passwd/1/1"
+
+    matchers:
+      - type: regex
+        part: body
+        regex:
+          - '^root:x:0:0:'
